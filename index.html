@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Bonito</title>
+    <style>
+        body {
+            background: linear-gradient(120deg, #a8edea 0%, #fed6e3 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 4px #fff;
+        }
+        #gameCanvas {
+            background: #fff;
+            border-radius: 20px;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            border: 4px solid #ffb6b9;
+        }
+        #score {
+            font-size: 1.2em;
+            color: #ff6f91;
+            margin-bottom: 20px;
+        }
+        #restartBtn {
+            display: none;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: #ffb6b9;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-size: 1em;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(255,182,185,0.2);
+            transition: background 0.2s;
+        }
+        #restartBtn:hover {
+            background: #ff6f91;
+        }
+    </style>
+</head>
+<body>
+    <h1>🐍 Snake Bonito</h1>
+    <div id="score">Puntaje: 0</div>
+    <canvas id="gameCanvas" width="400" height="400"></canvas>
+    <button id="restartBtn">Reiniciar</button>
+    <script src="snake.js"></script>
+</body>
+</html>
